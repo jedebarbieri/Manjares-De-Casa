@@ -1,0 +1,62 @@
+.listado a {
+	display: inline-block;
+	width: 25%;
+	height: 2.9em;
+	padding: 0.5em;
+	box-sizing: border-box;
+	color: #1e160b;
+	font-size: 1.2em;
+	text-align: right;
+	vertical-align: top;
+	min-height: 2.9em;
+}
+a.san-valentin {
+	background-color: #f760a7;
+}
+a.dia-de-la-madre {
+	background-color: #ff0079;
+}
+a.dia-de-la-secretaria {
+	background-color: #fd5101;
+}
+a.navidad {
+	background-color: #ff0209;
+}
+a.pascua {
+	background-color: #8dd00b;
+}
+a.dia-de-la-mujer {
+	background-color: #3fbe24;
+}
+a.recuerdos {
+	background-color: #00ada1;
+}
+a.dia-del-padre {
+	background-color: #00a1dc;
+}
+
+@media all and (max-width:900px), all and (max-device-width:900px) {
+	.listado {
+		position: static;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+	.listado a {
+		width: 50%;
+		height: 2.9em;
+		font-size: 1em;
+		text-align: right;
+		min-height: 2.9em;
+	}
+}
+@media all and (max-width:700px), all and (max-device-width:700px) {
+	.listado a {
+		display: block;
+		margin: 0px;
+		width: auto;
+		height: auto;
+		font-size: 1em;
+		text-align: center;
+		padding: 1em;
+	}
+}

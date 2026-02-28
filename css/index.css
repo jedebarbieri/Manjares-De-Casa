@@ -1,0 +1,192 @@
+.banners {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 25%;
+	overflow: hidden;
+}
+.banners .imagen {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.contenido {
+	width: 25%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	overflow: hidden;
+}
+h1 {
+	text-indent: -999em;
+	overflow: hidden;
+	font-size: 0px;
+	display: block;
+	background-image: url(../images/logo_manjares_de_casa.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: absolute;
+	top: 24%;
+	height: 24%;
+	width: 95%;
+}
+.menu {
+	position: absolute;
+	width: 100%;
+	padding: 5%;
+	box-sizing: border-box;
+	top: 60%;
+}
+.menu nav a {
+	display: block;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 1em;
+	font-family: ManjaresDeCasaLight-Condensed, Arial, Helvetica, sans-serif;
+	letter-spacing: -0.05em;
+	position: relative;
+	left: 0px;
+	-webkit-transition: left 200ms, color 200ms;
+	-moz-transition: left 200ms, color 200ms;
+	-o-transition: left 200ms, color 200ms;
+	transition: left 200ms, color 200ms;
+}
+.menu nav a:hover {
+	color: #e31580;
+	left: 5px;
+}
+.menu .socials {
+	display: block;
+	margin: 0.5em 0em 0em 0em;
+}
+.menu .socials a {
+	text-indent: -999em;
+	overflow: hidden;
+	display: inline-block;
+	width: 0.8em;
+	height: 0.8em;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 0.2em 0.1em 0px 0px;
+	position: relative;
+	bottom:0px;
+	-webkit-transition: bottom 200ms;
+	-moz-transition: bottom 200ms;
+	-o-transition: bottom 200ms;
+	transition: bottom 200ms;
+}
+.menu .socials a:hover {
+	bottom: 2px;
+}
+.menu .socials a.pinterest {
+	background-image: url(../images/icon_pinterest_manjares_de_casa.png);
+}
+.menu .socials a.facebook {
+	background-image: url(../images/icon_facebook_manjares_de_casa.png);
+}
+.menu .socials a.gplus {
+	background-image: url(../images/icon_gplus_manjares_de_casa.png);
+}
+.menu .socials a.twitter {
+	background-image: url(../images/icon_twitter_manjares_de_casa.png);
+}
+.contactos {
+	position: absolute;
+	bottom: 1em;
+	font-size: 0.7em;
+	line-height: 1em;
+	color:#e31580;
+	padding: 0% 5% 0% 5%;
+}
+.contactos a:hover {
+	color:#ffffff;
+}
+@media all and (max-width:900px), all and (max-device-width:700px) {
+	html {
+		height: auto;
+		position: relative;
+	}
+	body {
+		min-height: 0px;
+		position: relative;
+	}
+	.banners {
+		position: relative;
+		left: 0px;
+		top: 0px;
+		display: block;
+		height: 7em;
+		min-height: 80px;
+		width: 100%;
+	}
+	.contenido {
+		position: relative;
+		left: 0px;
+		top: 0px;
+		width: auto;
+		height: auto;
+		padding: 0em 1em 1em 1em;
+		overflow: visible;
+	}
+	h1 {
+		position: relative;
+		min-height: 115px;
+		font-size: 1em;
+		height: 6em;
+		width: auto;
+		top: 0px;
+	}
+	.menu {
+		position: relative;
+		top: 0px;
+		width: auto;
+		padding: 0em 1em 1em 1em;
+		text-align: center;
+	}
+	.menu nav a {
+		position: relative;
+		-webkit-transition: color 200ms;
+		-moz-transition: color 200ms;
+		-o-transition: color 200ms;
+		transition: color 200ms;
+	}
+	.menu nav a:hover {
+		color: #e31580;
+		left: 0px;
+	}
+	.menu .socials {
+		text-align: center;
+		margin-top: 2em;
+		margin-bottom: 1em;
+	}
+	.menu .socials a {
+		position: relative;
+		-webkit-transition: none;
+		-moz-transition: none;
+		-o-transition: none;
+		transition: none;
+	}
+	.menu .socials a:hover {
+	}
+	.contactos {
+		position: relative;
+		bottom: 0px;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+}
+@media
+all and (max-device-width:700px) and (orientation:landscape) and (min-device-aspect-ratio:5/4),
+(max-width:900px) and (orientation:landscape) and (device-aspect-ratio:5/4){
+	.banners {
+		display: none;
+	}
+}

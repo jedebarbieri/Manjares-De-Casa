@@ -1,0 +1,224 @@
+body {
+	background-color:#23170b;
+	color:#FFF;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	text-align:center;
+	margin:0px;
+}
+
+a {
+	border:none;
+	text-decoration:none;
+	color:inherit;
+}
+a:hover {
+	color:#FC3;
+}
+div#principal {
+	width:900px;
+	margin:auto;
+}
+#logo {
+	text-align:left;
+}
+h1 {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:22px;
+	color:#FFF;
+	text-align:center;
+	margin:35px 0px 25px 0px;
+}
+
+/* Formularios */
+form {
+	margin:auto;
+	text-align:left
+}
+.cajaTexto {
+	width:200px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	border:#e00a73 solid 1px;
+	margin:5px 0px 5px 0px;
+}
+.boton {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	border:#e00a73 solid 1px;
+	min-width:80px;
+	height:20px;
+	margin:10px 0px 10px 0px;
+	cursor:pointer;
+	height:24px;
+}
+/* Mensaje Error*/
+.mensajeError {
+	color:#FF0;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:11px;
+	text-align:center;
+	margin:10px 0px 10px 0px;
+}
+/* Menu */
+#menu {
+	text-align:center;
+	display:inline-block;
+	margin:0px auto 0px auto;
+}
+#menu ul {
+	list-style: none;
+	margin:0px;
+	padding:0px;
+	text-align: center;
+	font-size: 0px;
+}
+#menu li {
+	display: inline-block;
+	min-width:100px;
+	height:30px;
+	border:#e00a73 solid 1px;
+	margin:0px 5px 0px 0px;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#FFF;
+	font-size:14px;
+	cursor:pointer;
+}
+#menu p {
+	margin:5px 0px 0px 0px;
+	padding: 0px 9px 0px 9px;
+}
+#menu a:hover {
+	background-color:#CBA36B;
+	color:#333;
+}
+#menu li:hover {
+	background-color:#CBA36B;
+	color:#333;
+}
+.seleccionado {
+	background-color:#CBA36B;
+	color:#333;
+}
+/* SubMenu Categorias*/
+
+#subcategorias {
+	display:inline-block;
+	margin:15px 0px 0px 0px;
+}
+#subcategorias ul {
+	list-style: none;
+	margin:0px;
+	padding:0px;
+	text-align: center;
+	font-size: 0px;
+}
+#subcategorias li {
+	display: inline-block;
+	min-width:50px;
+	height:20px;
+	border:#e00a73 solid 1px;
+	margin:0px 5px 5px 0px;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#FFF;
+	font-size:12px;
+	cursor:pointer;
+}
+#subcategorias p {
+	margin:2px 9px 0px 9px;
+}
+#subcategorias a:hover {
+	background-color:#CBA36B;
+	color:#333;
+}
+#subcategorias li:hover {
+	background-color:#CBA36B;
+	color:#333;
+}
+.subcategoriaseleccionada {
+	background-color:#CBA36B;
+	color:#333;
+}
+
+
+#submenu {
+	text-align:left;
+	font-size:11px;
+	margin:20px 0px 15px 0px;
+}
+
+
+.cuadroProducto {
+	text-align:left;
+	width:100%;
+	min-height:200px;
+	margin:0px 0px 20px 0px;
+	border:solid 1px #3b2917;
+}
+.cuadroProducto:hover {
+	border:solid 1px #e00a73;
+	margin:0px 0px 20px 0px;
+}
+.cuadroProducto img {
+	float:left;
+	margin:0px 10px 0px 0px;
+	max-width: 200px;
+}
+.nombreProducto {
+	font-size:14px;
+	font-weight:bold;
+	margin:0px 0px 10px 210px;
+}
+.descripcionProducto {
+	font-size:11px;
+	margin:0px 0px 10px 210px;
+}
+.precioProducto {
+	font-size:14px;
+	color:#e00a73;
+	font-weight:bold;
+	margin:0px 0px 10px 210px;
+}
+.opcionesProducto {
+	font-size:11px;
+	margin: 0px 0px 10px 210px;
+}
+
+.lista {
+	text-align: left;
+	font-size: 0px;
+}
+.cuadroUsuario {
+	text-align:left;
+	width:440px;
+	min-height:140px;
+	margin:0px 14px 15px 0px;
+	border:solid 1px #3b2917;
+	display: inline-block;
+	font-size: 14px;
+}
+.cuadroUsuario:nth-child(2n) {
+	margin-right: 0px;
+}
+.cuadroUsuario:hover {
+	border:solid 1px #e00a73;
+}
+.cuadroUsuario img {
+	float:left;
+	margin:0px 10px 0px 0px;
+}
+.nombreUsuario {
+	font-size:14px;
+	font-weight:bold;
+	margin:5px 5px 10px 10px;
+}
+.descripcionUsuario {
+	font-size:11px;
+	margin:5px 5px 5px 20px;
+	color:#bfafa0
+}
+.opcionesUsuario {
+	font-size:11px;
+	margin:15px 5px 5px 10px;
+	color:#cab883
+}

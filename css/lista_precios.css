@@ -1,0 +1,129 @@
+.listado {
+	position: relative;
+	top: 0px;
+	width: 60%;
+	min-width: 900px;
+	box-sizing: border-box;
+	margin: 0px auto 0px auto;
+	background-color: #50412c;
+	padding: 1em;
+}
+.pie {
+	position: relative;
+}
+h2 {
+	width: 60%;
+	min-width: 900px;
+	margin: 0px auto 0px auto;
+	line-height: 2em;
+}
+h3 {
+	display: none;
+}
+.listado table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.listado table thead {
+	text-align: center;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+.listado table thead td {
+	border-bottom: 0.1em solid #1e160b;
+	padding-bottom: 0.3em;
+}
+.listado table tbody td {
+	font-size: 0.9em;
+	border-bottom: 1px solid #1e160b;
+	padding: 0.2em;
+}
+.listado table tbody tr:last-child td {
+	border-bottom: none;
+}
+.listado table tbody td.precio {
+	width: 12%;
+}
+.listado table tbody tr {
+	cursor: default;
+	transition:background-color 0.5s;
+	-webkit-transition:background-color 0.5s;
+	-moz-transition:background-color 0.5s;
+	-o-transition:background-color 0.5s;
+}
+.listado table tbody tr:hover {
+	background-color:#6B5D46;
+}
+.comandos {
+	width: 60%;
+	min-width: 900px;
+	box-sizing: border-box;
+	margin: 0px auto 0px;
+	padding: 1em 0em 1em 0em;
+}
+.comandos .imprimir, .comandos .guardar {
+	display:inline-block;
+	width:20px;
+	height:20px;
+	margin:4px;
+	background-repeat:no-repeat;
+	background-position:left top;
+	background-size: 100% auto;
+	cursor:pointer;
+}
+.comandos .imprimir:hover, .comandos .guardar:hover {
+	background-position:left bottom;
+}
+.comandos .imprimir {
+	background-image:url(../images/iconImprimir.png);
+}
+.comandos .guardar {
+	background-image:url(../images/iconGuardar.png);
+}
+
+@media print {
+	body{
+		background-color:#ffffff;
+		color: #000000;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12pt;
+	}
+	.cabecera, .comandos, .pie {
+		display: none;
+	}
+	h3 {
+		display: block;
+	}
+	a {
+		color:#000000 !important;
+	}
+	.listado {
+		position: static;
+		width: 100%;
+		min-width: 0px;
+		background: none;
+		padding: 1em;
+	}
+}
+@media all and (max-width:900px), (max-device-width:900px) {
+	.listado {
+		font-size: 0.5em;
+		width: 100%;
+		min-width: 0px;
+		padding: 0.5em;
+	}
+	h2 {
+		display: none;
+	}
+	.comandos {
+		width: 100%;
+		min-width: 0px;
+		text-align: center;
+		padding: 0.5em 0em 0.5em 0em;
+	}
+	.comandos .imprimir, .comandos .guardar {
+		width:1em;
+		height:1em;
+		margin:0.1em;
+	}
+}

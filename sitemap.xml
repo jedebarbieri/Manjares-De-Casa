@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+	<url>
+		<loc>http://www.manjaresdecasa.com/</loc>
+		<lastmod>2015-03-30T18:02:19+00:00</lastmod>
+	</url>
+	<url>
+		<loc>http://www.manjaresdecasa.com/dulces</loc>
+	</url>
+	<url>
+		<loc>http://www.manjaresdecasa.com/trufas-de-chocolate</loc>
+	</url>
+	<url>
+		<loc>http://www.manjaresdecasa.com/galletas-y-barquillos</loc>
+	</url>
+	<url>
+		<loc>http://www.manjaresdecasa.com/cupcakes-y-kekes</loc>
+	</url>
+	<url>
+		<loc>http://www.manjaresdecasa.com/ocasiones-especiales</loc>
+	</url>
+	<url>
+		<loc>http://www.manjaresdecasa.com/san-valentin</loc>
+	</url>
+	<url>
+		<loc>http://www.manjaresdecasa.com/dia-de-la-madre</loc>
+	</url>
+	<url>
+		<loc>http://www.manjaresdecasa.com/dia-de-la-secretaria</loc>
+	</url>
+	<url>
+		<loc>http://www.manjaresdecasa.com/navidad</loc>
+	</url>
+	<url>
+		<loc>http://www.manjaresdecasa.com/pascua</loc>
+	</url>
+	<url>
+		<loc>http://www.manjaresdecasa.com/dia-de-la-mujer</loc>
+	</url>
+	<url>
+		<loc>http://www.manjaresdecasa.com/recuerdos</loc>
+	</url>
+	<url>
+		<loc>http://www.manjaresdecasa.com/dia-del-padre</loc>
+	</url>
+	<url>
+		<loc>http://www.manjaresdecasa.com/lista-de-precios</loc>
+	</url>
+</urlset>

@@ -1,0 +1,719 @@
+@font-face {
+	font-family: ManjaresDeCasa;
+	src: url('fonts/eot/ManjaresDeCasaRegular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/ttf/ManjaresDeCasaRegular.ttf')  format('truetype'),
+		url('fonts/otf/ManjaresDeCasaRegular.otf')  format('opentype'),
+		url('fonts/svg/ManjaresDeCasaRegular.svg#ManjaresDeCasaRegular') format('svg'),
+		url('fonts/woff/ManjaresDeCasaRegular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: ManjaresDeCasa;
+	src: url('fonts/eot/ManjaresDeCasaBold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/ttf/ManjaresDeCasaBold.ttf')  format('truetype'),
+		url('fonts/otf/ManjaresDeCasaBold.otf')  format('opentype'),
+		url('fonts/svg/ManjaresDeCasaBold.svg#ManjaresDeCasaBold') format('svg'),
+		url('fonts/woff/ManjaresDeCasaBold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: ManjaresDeCasaLight-Condensed;
+	src: url('fonts/eot/ManjaresDeCasaLight-Condensed.eot?#iefix') format('embedded-opentype'),
+		url('fonts/ttf/ManjaresDeCasaLight-Condensed.ttf')  format('truetype'),
+		url('fonts/otf/ManjaresDeCasaLight-Condensed.otf')  format('opentype'),
+		url('fonts/svg/ManjaresDeCasaLight-Condensed.svg#ManjaresDeCasaLight-Condensed') format('svg'),
+		url('fonts/woff/ManjaresDeCasaLight-Condensed.woff') format('woff');
+	font-weight: lighter;
+	font-style: normal;
+}
+@font-face {
+	font-family: ManjaresDeCasaLight;
+	src: url('fonts/eot/ManjaresDeCasaLight.eot?#iefix') format('embedded-opentype'),
+		url('fonts/ttf/ManjaresDeCasaLight.ttf')  format('truetype'),
+		url('fonts/otf/ManjaresDeCasaLight.otf')  format('opentype'),
+		url('fonts/svg/ManjaresDeCasaLight.svg#ManjaresDeCasaLight') format('svg'),
+		url('fonts/woff/ManjaresDeCasaLight.woff') format('woff');
+	font-weight: lighter;
+	font-style: normal;
+}
+html {
+	height: 100%;
+}
+body {
+	font-family: ManjaresDeCasa, Arial, Helvetica, sans-serif;
+	background-color: #1e160b;
+	color: #ffffff;
+	font-size: 24px;
+	line-height: 1em;
+	position: relative;
+	margin: 0px;
+	min-height: 580px;
+	height: 100%;
+}
+body>iframe {
+	display: none;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+	-webkit-transition: color 200ms;
+	-moz-transition: color 200ms;
+	-o-transition: color 200ms;
+	transition: color 200ms;
+}
+
+.cabecera {
+	display: inline-block;
+	width: 100%;
+	position: relative;
+	margin: 0px;
+	text-align: right;
+}
+.cabecera .menuResponsive {
+	display: none;
+}
+.cabecera .logo {
+	position: relative;
+	display: block;
+	width: 26%;
+	background-image: url(../images/logo_manjares_de_casa.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-origin: padding-box;
+	margin-top: 1em;
+	margin-left: 1em;
+}
+.cabecera .logo>div {
+	padding-bottom: 56.6%;
+}
+.cabecera>nav {
+	display: inline-block;
+	font-size: 1.5em;
+	line-height: 1em;
+	letter-spacing: -0.03em;
+	position: relative;
+	margin-top: -3.2em;
+}
+.cabecera>nav>a {
+	position: relative;
+	right: 0px;
+	display: block;
+	text-align: right;
+	padding-right: 0.65em;
+	transition: color 200ms, right 200ms;
+	-webkit-transition: color 200ms, right 200ms;
+	-moz-transition: color 200ms, right 200ms;
+	-o-transition: color 200ms, right 200ms;
+}
+.cabecera>nav>a:hover {
+	color: #e31580;
+	right: 0.2em;
+}
+.cabecera>nav>a.activo {
+	color: #e31580;
+	background-image: url(../images/puntero_menu_derecha.png);
+	background-repeat: no-repeat;
+	background-position: right 75%;
+	background-size: 0.35em 0.5em;
+}
+.cabecera>nav>a.activo:hover {
+	right: 0px;
+}
+.cabecera .menuResponsive {
+	position: relative;
+	overflow: visible;
+	z-index: 1000;
+	text-align: left;
+	margin-top: 0.5em;
+}
+.cabecera .menuResponsive>nav {
+	display: none;
+}
+.cabecera .menuResponsive.desplegado>nav {
+	display: block;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	background-color: #1e160b;
+}
+.cabecera .menuResponsive.desplegado>nav a {
+	display: block;
+	height: 1.5em;
+	line-height: 1.5em;
+	padding-left: 0.5em;
+}
+.cabecera .menuResponsive.desplegado>nav a.activo {
+	color: #e31580;
+}
+.cabecera .menuResponsive.desplegado>nav a:hover {
+	color: #e31580;
+	right: 0.2em;
+}
+.cabecera .menuResponsive button {
+	border: none;
+	background: none;
+	font-size: 1em;
+	color: #ffffff;
+	font-family: ManjaresDeCasa, Arial, Helvetica, sans-serif;
+	line-height: 1.5em;
+	margin: 0px;
+	height: 1.5em;
+	padding: 0px 0px 0px 0.5em;
+	display: block;
+	vertical-align: middle;
+	outline: none;
+	-webkit-transition: color 200ms;
+	-moz-transition: color 200ms;
+	-o-transition: color 200ms;
+	transition: color 200ms;
+	cursor: pointer;
+	width: 100%;
+	text-align: left;
+}
+.cabecera .menuResponsive .opciones {
+	margin-top: 0.25em;
+	background-image: url(../images/sombra_menu_resp.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+.cabecera .menuResponsive button:hover {
+	color: #e31580;
+}
+.cabecera .menuResponsive>.activo {
+	color: #e31580;
+	position: relative;
+	cursor: pointer;
+	padding-left: 0.5em;
+	height: 1.5em;
+	line-height: 1.5em;
+}
+.cabecera .menuResponsive .btn_desplegar {
+	background-image: url(../images/btn_desplegar.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	position: absolute;
+	width: 0.8em;
+	height: 0.8em;
+	margin-top: -0.4em;
+	top: 50%;
+	right: 0.5em;
+	cursor: pointer;
+}
+.cabecera .menuResponsive.desplegado .btn_desplegar {
+	background-image: url(../images/btn_plegar.png);
+}
+.listado {
+	position: absolute;
+	width: 100%;
+	max-width: 100%;
+	top: 52%;
+}
+.pie {
+	position: absolute;
+	width: 100%;
+	background-color: #1e160b;
+	display: inline-block;
+	height: 1em;
+	bottom: 0px;
+	left: 0px;
+	padding: 0.2em 0em 0.5em 0em;
+}
+.pie .opciones {
+	float: left;
+}
+.pie .opciones a {
+	padding-left: 0.65em;
+	vertical-align: middle;
+	line-height: 1em;
+}
+.pie .opciones a:hover {
+	color: #e31580;
+}
+.pie .opciones a.activo {
+	color: #e31580;
+	background-image: url(../images/puntero_menu_izquierda.png);
+	background-repeat: no-repeat;
+	background-position: left 60%;
+	background-size: 0.35em 0.5em;
+}
+.pie .opciones button {
+	border: none;
+	background: none;
+	font-size: 1em;
+	color: #ffffff;
+	font-family: ManjaresDeCasa, Arial, Helvetica, sans-serif;
+	line-height: 1em;
+	display: inline-block;
+	vertical-align: middle;
+	outline: none;
+	-webkit-transition: color 200ms;
+	-moz-transition: color 200ms;
+	-o-transition: color 200ms;
+	transition: color 200ms;
+	cursor: pointer;
+}
+.pie .opciones button:hover {
+	color: #e31580;
+}
+.pie .socials {
+	float: right;
+	text-align: right;
+	margin-right: 0.5em;
+}
+.pie .socials .likebutton {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 0.4em;
+	margin-bottom: 0.2em;
+}
+.pie .socials>a {
+	display: inline-block;
+	vertical-align: middle;
+	height: 1em;
+	width: 1em;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	margin-right: 0.2em;
+	text-align: left;
+	text-indent: -999em;
+	overflow: hidden;
+}
+.pie .socials>a.pinterest {
+	background-image: url(../images/icon_pinterest_manjares_de_casa.png);
+}
+.pie .socials>a.facebook {
+	background-image: url(../images/icon_facebook_manjares_de_casa.png);
+}
+.pie .socials>a.gplus {
+	background-image: url(../images/icon_gplus_manjares_de_casa.png);
+}
+.pie .socials>a.twitter {
+	background-image: url(../images/icon_twitter_manjares_de_casa.png);
+}
+.contacto {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1001;
+	display: none;
+}
+.contacto .veladura {
+	background-color: rgba(18,11,3,0.78);
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+.contacto .ventana {
+	width: 65%;
+	height: 100%;
+	min-width: 800px;
+	display: block;
+	margin: 0px auto 0px auto;
+	position: relative;
+}
+.contacto .ventana .contenido {
+	display: block;
+	padding-bottom: 46.88%;
+	width: 100%;
+	height: 0px;
+	position: absolute;
+	margin-top: -23.44%;
+	top: 50%;
+	background-color: #1e160b;
+	font-size: 0.7em;
+	line-height: 1em;
+}
+.contacto .ventana .contenido a {
+	color: #ec008c;
+}
+.contacto .ventana .contenido a:hover {
+	color: #f54eb1;
+}
+.contacto .ventana .contenido .formulario {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 35%;
+	padding: 1.5em 1em 1.5em 0.5em;
+}
+.contacto .ventana .contenido .formulario form {
+	width: 100%;
+	height: 100%;
+}
+.contacto .ventana .contenido .formulario table {
+	width: 100%;
+	height: 100%;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+.contacto .ventana .contenido .formulario table tr {
+	height: 1em;
+}
+.contacto .ventana .contenido .formulario table tr.error .campo input,
+.contacto .ventana .contenido .formulario table tr.error .campo textarea {
+	border: 2px solid #e60751;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+}
+.contacto .ventana .contenido .formulario table .etiqueta {
+	width: 35%;
+	vertical-align: middle;
+	line-height: 0px;
+	text-align: right;
+	padding-right: 1em;
+}
+.contacto .ventana .contenido .formulario table td {
+	padding-bottom: 0.6em;
+}
+.contacto .ventana .contenido .formulario table tr:last-child td {
+	padding-bottom: 0px;
+}
+.contacto .ventana .contenido .formulario table input,
+.contacto .ventana .contenido .formulario table textarea {
+	background-color: #4f3b28;
+	color: #ffffff;
+	font-family: ManjaresDeCasa, Arial, Helvetica, sans-serif;
+	border: none;
+	box-sizing: border-box;
+	display: block;
+	margin: 0px;
+	width: 100%;
+	padding: 0.2em;
+	font-size: inherit;
+	outline-color: #d5800b;
+}
+.contacto .ventana .contenido .formulario table textarea {
+	height: 100%;
+	resize: none;
+}
+.contacto .ventana .contenido .formulario table tr.consultas {
+	height: auto;
+}
+.contacto .ventana .contenido .formulario table tr.consultas td.etiqueta {
+	vertical-align: top;
+	padding-top: 0.6em;
+}
+.contacto .ventana .contenido .formulario table .btn_enviar {
+	display: block;
+	height: 100%;
+	padding: 0.5em;
+	text-align: center;
+	color: #1e160b;
+	background-color: #e28506;
+	cursor: pointer;
+	transition: background-color 200ms;
+	-moz-transition: background-color 200ms;
+	-o-transition: background-color 200ms;
+	-webkit-transition: background-color 200ms;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+.contacto .ventana .contenido .formulario table .btn_enviar:hover {
+	background-color: #ff9300;
+}
+.contacto .ventana .contenido>.datos {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 65%;
+	padding: 1.5em 1em 1.5em 0.5em;
+}
+.contacto .ventana .contenido>.datos table {
+	width: 100%;
+	height: 100%;
+}
+.contacto .ventana .contenido>.datos table tr {
+	height: 1em;
+}
+.contacto .ventana .contenido>.datos table tr.mapa {
+	height: auto;
+}
+.contacto .ventana .contenido>.datos table tr.mapa td {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+.contacto .ventana .contenido .btn_cerrar {
+	width: 1.5em;
+	height: 1.5em;
+	background-image: url(../images/btn_cerrar.png);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: -0.75em;
+	right: -0.75em;
+	cursor: pointer;
+	transition: transform 200ms;
+	transition: -ms-transform 200ms;
+	-webkit-transition: -webkit-transform 200ms;
+	-moz-transition: -moz-transform 200ms;
+	-o-transition: -o-transform 200ms;
+}
+.contacto .ventana .contenido .btn_cerrar:hover {
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+}
+#mapa {
+	width: 100%;
+	height: 100%;
+}
+.contacto .ventana .contenido>.datos .mensaje {
+	font-family: ManjaresDeCasaLight, Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	line-height: 1em;
+	letter-spacing: -0.03em;
+}
+.contacto .estado {
+	display: none;
+	text-align: center;
+	color:#ffffff;
+	line-height: 6em;
+}
+.contacto.enviando .estado {
+	display: block;
+}
+.contacto.enviando .formulario,
+.contacto.enviando .datos {
+	display: none;
+}
+@media all and (max-width:900px), (max-device-width:900px) {
+	html {
+		height: auto;
+	}
+	body {
+		font-size: 48px;
+		line-height: 1em;
+		position: static;
+		min-height: 0px;
+		height: auto;
+	}
+	.cabecera {
+		display: block;
+		text-align: center;
+	}
+	.cabecera .menuResponsive {
+		display: block;
+	}
+	.cabecera .logo {
+		position: relative;
+		display: inline-block;
+		width: 65%;
+		max-width: 500px;
+		margin-top: 0.7em;
+		margin-left: 0em;
+	}
+	.cabecera>nav {
+		display: none;
+	}
+
+	.pie {
+		position: static;
+		height: auto;
+		padding: 0.2em 0em 0.5em 0em;
+	}
+	.pie .opciones {
+		display: none;
+	}
+	.pie .socials {
+		float: none;
+		text-align: center;
+		margin-right: 0em;
+		padding-bottom: 1em;
+	}
+	.pie .socials .likebutton {
+		display: block;
+		margin-right: 0em;
+		margin-bottom: 1em;
+	}
+	.pie .socials>a {
+		height: 1em;
+		width: 1em;
+	}
+	.contacto {
+		overflow-y: scroll;
+	}
+	.contacto .veladura {
+		display: none;
+	}
+	.contacto .ventana {
+		width: 100%;
+		height: auto;
+		min-width: 100%;
+		min-height: 100%;
+		margin: 0px;
+		position: static;
+	}
+	.contacto .ventana .contenido {
+		display: block;
+		padding:0px;
+		height: auto;
+		min-height: 100%;
+		width: 100%;
+		position: absolute;
+		margin: 0px;
+		top: 0px;
+	}
+	.contacto .ventana .contenido .formulario {
+		position: static;
+		padding: 0.8em;
+	}
+	.contacto .ventana .contenido .formulario table {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+	.contacto .ventana .contenido tbody {
+		display: block;
+	}
+	.contacto .ventana .contenido .formulario table tr {
+		display: block;
+		height: auto;
+	}
+	.contacto .ventana .contenido .formulario table .etiqueta {
+		width: 100%;
+		text-align: left;
+		padding-right: 0em;
+		padding-top: 0.5em;
+		line-height: 1em;
+	}
+	.contacto .ventana .contenido .formulario table td.campo {
+		padding-bottom: 0em;
+	}
+	.contacto .ventana .contenido .formulario table td {
+		display: block;
+		padding-bottom: 0.1em;
+	}
+	.contacto .ventana .contenido .formulario table tr:last-child td {
+		padding-bottom: 0.1em;
+	}
+	.contacto .ventana .contenido .formulario table textarea {
+		height: 5em;
+	}
+	.contacto .ventana .contenido .formulario table tr.consultas td.etiqueta {
+		padding-top: 0.5em;
+	}
+	.contacto .ventana .contenido>.datos {
+		position: static;
+		left: 0px;
+		padding: 0em 1em 1em 1em;
+		text-align: center;
+	}
+	.contacto .ventana .contenido>.datos table {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.contacto .ventana .contenido>.datos table tr {
+		display: block;
+		height: auto;
+	}
+	.contacto .ventana .contenido>.datos table tr.mapa {
+		height: 8em;
+	}
+	.contacto .ventana .contenido>.datos table tr.mapa td {
+		padding: 0px;
+		height: 100%;
+	}
+	#mapa {
+		margin: 1em 0px 1em 0px;
+	}
+	.contacto .ventana .contenido>.datos table td {
+		display: block;
+	}
+	.contacto .ventana .contenido .btn_cerrar {
+		background-image: url(../images/btn_cerrar_r.png);
+		position: fixed;
+		top: 0px;
+		right: 0px;
+	}
+	.contacto .ventana .contenido .btn_cerrar:hover {
+		transform: none;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-o-transform: none;
+		-ms-transform: none;
+	}
+	.contacto .ventana .contenido>.datos .mensaje {
+		text-align: center;
+		padding: 1em 0px 1em 0px;
+	}
+	.contacto .estado {
+		line-height: 1em;
+		padding-top: 2em;
+		text-align: center;
+	}
+}
+@media all and (max-width:900px), (max-device-width:900px) {
+	body {
+		font-size: 44px;
+	}
+}
+@media all and (max-width:600px), (max-device-width:600px) {
+	body {
+		font-size: 38px;
+	}
+}
+@media all and (max-width:400px), (max-device-width:400px) {
+	body {
+		font-size: 32px;
+	}
+}
+@media all and (max-width:320px), (max-device-width:320px) {
+	body {
+		font-size: 26px;
+	}
+}
+@media all and (min-width:1000px) {
+	body {
+		font-size:26px;
+		min-height: 630px;
+	}
+}
+@media all and (min-width:1200px) {
+	body {
+		font-size:28px;
+		min-height: 690px;
+	}
+}
+@media all and (min-width:1400px) {
+	body {
+		font-size:30px;
+		min-height: 740px;
+	}
+}
+@media all and (min-width:1600px) {
+	body {
+		font-size:32px;
+		min-height: 780px;
+	}
+}
+@media all and (min-width:1800px) {
+	body {
+		font-size:34px;
+		min-height: 830px;
+	}
+}
+@media all and (min-width:2000px) {
+	body {
+		font-size:36px;
+		min-height: 880px;
+	}
+}

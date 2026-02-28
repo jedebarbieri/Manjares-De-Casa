@@ -1,0 +1,19 @@
+RewriteEngine on
+
+RewriteRule ^dulces([/]?)$ productos.php?categoria=1 [L]
+RewriteRule ^trufas-de-chocolate([/]?)$ productos.php?categoria=2 [L]
+RewriteRule ^galletas-y-barquillos([/]?)$ productos.php?categoria=3 [L]
+RewriteRule ^cupcakes-y-kekes([/]?)$ productos.php?categoria=4 [L]
+RewriteRule ^san-valentin([/]?)$ productos.php?categoria=6 [L]
+RewriteRule ^dia-de-la-madre([/]?)$ productos.php?categoria=7 [L]
+RewriteRule ^dia-de-la-secretaria([/]?)$ productos.php?categoria=11 [L]
+RewriteRule ^navidad([/]?)$ productos.php?categoria=9 [L]
+RewriteRule ^pascua([/]?)$ productos.php?categoria=12 [L]
+RewriteRule ^dia-de-la-mujer([/]?)$ productos.php?categoria=13 [L]
+RewriteRule ^recuerdos([/]?)$ productos.php?categoria=14 [L]
+RewriteRule ^dia-del-padre([/]?)$ productos.php?categoria=8 [L]
+
+RewriteRule ^([^/]+)/([^/]+)/([0-9]+)$ productos.php?producto=$3 [L]
+
+RewriteRule ^ocasiones-especiales([/]?)$ ocasiones_especiales.php [L]
+RewriteRule ^lista-de-precios([/]?)$ lista_de_precios.php
