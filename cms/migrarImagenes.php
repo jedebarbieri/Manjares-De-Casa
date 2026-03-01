@@ -20,18 +20,24 @@ foreach ($listaProductos as $producto) {
 //		}
 //	}
 
+	$cambios = false;
+
 	if (file_exists("/home/jedebarbieri/www/manjaresdecasa/" . $producto->imagen_grande)) {
 		if (copy("/home/jedebarbieri/www/manjaresdecasa/" . $producto->imagen_grande, Utils::DIR_FOTOS . "/manjares_de_casa_" . $producto->id . "_" . Utils::getUrlName($producto->nombre) . ".jpg")) {
 			echo "se copió correctamente la imagen grande";
 			$producto->imagen_grande = "manjares_de_casa_" . $producto->id . "_" . Utils::getUrlName($producto->nombre) . ".jpg";
+			$cambios = true;
 		}
 	}
 	if (file_exists("/home/jedebarbieri/www/manjaresdecasa/" . $producto->imagen_previa)) {
 		if (copy("/home/jedebarbieri/www/manjaresdecasa/" . $producto->imagen_previa, Utils::DIR_FOTOS . "/manjares_de_casa_" . $producto->id . "_" . Utils::getUrlName($producto->nombre) . "_small.jpg")) {
 			echo "se copió correctamente la imagen previa";
 			$producto->imagen_previa = "manjares_de_casa_" . $producto->id . "_" . Utils::getUrlName($producto->nombre) . "_small.jpg";
+			$cambios = true;
 		}
 	}
 
-	$producto->modificar();
+	if ($cambios) {
+		$producto->guardarImagen(NULL, NULL);
+	}
 }

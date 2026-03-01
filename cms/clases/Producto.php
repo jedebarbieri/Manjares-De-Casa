@@ -103,7 +103,7 @@ class Producto {
 		return $listaProductos;
 	}
 
-	private function guardarImagen($imagenGrande = NULL, $imagenPrevia = NULL) {
+	public function guardarImagen($imagenGrande = NULL, $imagenPrevia = NULL) {
 		if (!empty($imagenGrande["name"])) {
 			if (file_exists(Utils::DIR_FOTOS . "/" . $this->imagen_grande) && !empty($this->imagen_grande)) {
 				unlink(Utils::DIR_FOTOS . "/" . $this->imagen_grande);
