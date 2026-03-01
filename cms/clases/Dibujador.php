@@ -1,7 +1,5 @@
 <?
 
-use \Categoria;
-
 class Dibujador {
 
 	public static function menuPrincipal($categoria = NULL) {

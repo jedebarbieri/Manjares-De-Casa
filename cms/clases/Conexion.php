@@ -1,7 +1,5 @@
 <?
 
-use \Utils;
-
 abstract class Conexion {
 
 //	PRODUCCIÓN

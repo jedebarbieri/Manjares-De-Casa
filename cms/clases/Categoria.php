@@ -1,7 +1,5 @@
 <?
 
-use \Conexion;
-
 class Categoria {
 
 	public $id;

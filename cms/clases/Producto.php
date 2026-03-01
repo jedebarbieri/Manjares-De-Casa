@@ -1,8 +1,5 @@
 <?
 
-use \Conexion;
-use \Categoria;
-
 class Producto {
 
 	public $id;
