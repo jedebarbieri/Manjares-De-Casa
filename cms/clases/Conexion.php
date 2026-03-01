@@ -7,7 +7,7 @@ abstract class Conexion {
 	const HOST = "localhost";
 
 	private static $USER = "adriana";
-	private static $PASSWORD = "hovatidedigepti";
+	private static $PASSWORD = "****";
 
 //	DESARROLLO REMOTO
 //	const NOMBRE_BD = "kingsoft_manjares";
