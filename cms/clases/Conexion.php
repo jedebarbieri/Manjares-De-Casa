@@ -3,19 +3,12 @@
 abstract class Conexion {
 
 //	PRODUCCIÓN
-	const NOMBRE_BD = "jedebarbieri_manjares_catalogo";
+	const NOMBRE_BD = "****";
 	const HOST = "localhost";
 
-	private static $USER = "adriana";
+	private static $USER = "****";
 	private static $PASSWORD = "****";
 
-//	DESARROLLO REMOTO
-//	const NOMBRE_BD = "kingsoft_manjares";
-//	const HOST = "localhost";
-//	
-//	private static $USER = "webuser";
-//	private static $PASSWORD = "avengers";
-//
 // Constantes generales
 	const MYSQL_CODE_DUPLICATE_KEY = 1062;
 	const MYSQL_CODE_PARENT_NOT_EXIST = 1452;
