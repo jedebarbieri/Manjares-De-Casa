@@ -5,7 +5,7 @@ class Utils {
 	const PRODUCCION = true;
 	const DEFAULT_TIMEZONE = "America/Lima";
 //	PRODUCCIÓN
-	const URL = "http://manjaresdecasa.jedebarbieri.dev/";
+	const URL = "https://manjaresdecasa.jedebarbieri.dev/";
 	const DIR_FOTOS = "/home/jedebarbieri/www/manjaresdecasa/images/productos";
 
 //	DESARROLLO REMOTO

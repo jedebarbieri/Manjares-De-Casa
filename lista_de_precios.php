@@ -23,11 +23,11 @@ foreach ($listaProductos as $prod) {
 		<meta property="og:url" content="<?= Utils::URL ?>" />
 		<meta property="og:image" content="<?= Utils::URL ?>images/logo_manjares_de_casa_cuadrado.png" />
 		<meta name="description" content="Pedidos por ciento, x50 o x25. Tenemos un producto especial, hecho en casa, para el evento que tienes en mente: trufas, cupcakes, marquezas, manjarcitos, barquillos, galletas y chocolates en direntes presentaciones... Pídelos aquí." />
-		<script src="js/jquery-2.1.3.min.js" type="text/javascript"></script>
-		<script src="js/general.js" type="text/javascript"></script>
-		<script src="js/lista_precios.js" type="text/javascript"></script>
-		<link href="css/general.css" rel="stylesheet" type="text/css"/>
-		<link href="css/lista_precios.css" rel="stylesheet" type="text/css"/>
+		<script src="<?= Utils::URL ?>js/jquery-2.1.3.min.js" type="text/javascript"></script>
+		<script src="<?= Utils::URL ?>js/general.js" type="text/javascript"></script>
+		<script src="<?= Utils::URL ?>js/lista_precios.js" type="text/javascript"></script>
+		<link href="<?= Utils::URL ?>css/general.css" rel="stylesheet" type="text/css"/>
+		<link href="<?= Utils::URL ?>css/lista_precios.css" rel="stylesheet" type="text/css"/>
 		<title>Lista de Precios - Manjares de Casa</title>
 		<? Dibujador::socialsAPI(); ?>
 		<? Dibujador::analytics(); ?>

@@ -48,12 +48,12 @@ $listaProductos = Producto::todos($categoria);
 			<meta property="og:site_name" content="Manjares de Casa" />
 			<meta property="product:brand" content="Manjares de Casa" />
 		<? } ?>
-		<script src="js/jquery-2.1.3.min.js" type="text/javascript"></script>
-		<script src="js/jquery.tinyscrollbar.js" type="text/javascript"></script>
-		<script src="js/general.js" type="text/javascript"></script>
-		<script src="js/productos.js" type="text/javascript"></script>
-		<link href="css/general.css" rel="stylesheet" type="text/css"/>
-		<link href="css/productos.css" rel="stylesheet" type="text/css"/>
+		<script src="<?= Utils::URL ?>js/jquery-2.1.3.min.js" type="text/javascript"></script>
+		<script src="<?= Utils::URL ?>js/jquery.tinyscrollbar.js" type="text/javascript"></script>
+		<script src="<?= Utils::URL ?>js/general.js" type="text/javascript"></script>
+		<script src="<?= Utils::URL ?>js/productos.js" type="text/javascript"></script>
+		<link href="<?= Utils::URL ?>css/general.css" rel="stylesheet" type="text/css"/>
+		<link href="<?= Utils::URL ?>css/productos.css" rel="stylesheet" type="text/css"/>
 		<title><?= (empty($producto->id) ? $categoria->nombre : $producto->nombre) . " - Manjares de Casa" ?></title>
 		<script>
 			var categoria = {

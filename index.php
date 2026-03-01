@@ -20,8 +20,8 @@ spl_autoload_register(function ($clase) {
 		<meta name="description" content="Un universo de sabores y texturas... explora y descubre, tu manjar favorito. Trufas, manás, marquezas, manjarcitos, barquillos, galletas y chocolates en diferentes presentaciones para que puedas hacer un dulce detalle. Pedidos al 2243021 o al 993488105 Adriana Cárpena" />
 		<meta name="keywords" content="adriana cárpena, trufas de chocolate, chocochips, cachitos de nueces del brasil, brownies, manjarcitos, marquezas con coco, bolitas de nuez, encanelados, alfajores bañados en chocolate, pecanas con manjar y chocolate, guarpagueros, alfajores, pirotines de chocolate blanco o bitter con limón, lúcuma, maracuyá, suspiro limeño o mousse de chocolate, manás, manás con canela, bombones surtidos [blanco, leche, bitter, manjarcito, mazapán, crema de avellanas, praliné]..." />
 		<link rel="shortcut icon" href="<?= Utils::URL ?>images/icon_manjares_de_casa.png">
-		<link href="css/general.css" rel="stylesheet" type="text/css"/>
-		<link href="css/index.css" rel="stylesheet" type="text/css"/>
+		<link href="<?= Utils::URL ?>css/general.css" rel="stylesheet" type="text/css"/>
+		<link href="<?= Utils::URL ?>css/index.css" rel="stylesheet" type="text/css"/>
 		<title>Manjares de Casa : Dulces | Trufas de Chocolate | Galletas y Barquillos | Cupcakes y Kekes | Ocasiones Especiales</title>
 		<? Dibujador::analytics(); ?>
 	</head>

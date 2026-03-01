@@ -18,12 +18,12 @@ $categoria = new Categoria(5);
 		<meta property="og:url" content="<?= Utils::URL ?>ocasiones-especiales" />
 		<meta property="og:image" content="<?= Utils::URL ?>images/logo_manjares_de_casa_cuadrado.png" />
 		<meta name="description" content="El dulce ideal para cualquier ocasión: San Valentín, Día de la Madre, Día de la Secretaria, Navidad, Pascua, Día de la Mujer, Recuerdos, Día del Padre, etc." />
-		<script src="js/jquery-2.1.3.min.js" type="text/javascript"></script>
-		<script src="js/jquery.tinyscrollbar.js" type="text/javascript"></script>
-		<script src="js/general.js" type="text/javascript"></script>
-		<link href="css/general.css" rel="stylesheet" type="text/css"/>
-		<link href="css/ocasiones_especiales.css" rel="stylesheet" type="text/css"/>
-		<title>Ocasiones Especiales - Manjares de Casa" ?></title>
+		<script src="<?= Utils::URL ?>js/jquery-2.1.3.min.js" type="text/javascript"></script>
+		<script src="<?= Utils::URL ?>js/jquery.tinyscrollbar.js" type="text/javascript"></script>
+		<script src="<?= Utils::URL ?>js/general.js" type="text/javascript"></script>
+		<link href="<?= Utils::URL ?>css/general.css" rel="stylesheet" type="text/css"/>
+		<link href="<?= Utils::URL ?>css/ocasiones_especiales.css" rel="stylesheet" type="text/css"/>
+		<title>Ocasiones Especiales - Manjares de Casa</title>
 		<? Dibujador::analytics(); ?>
 	</head>
 	<body>
